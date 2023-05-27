@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./form.css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <div class="form">
+        <div class="form-group">
+            <h1 style="text-align: center;">Register</h1>
+            <div class="form-validation">
+                <input type="text" id="name" value="">
+                <span id="error-message-name"></span>
+                <input type="text" id="surname" value="">
+                <span id="error-message-surname"></span>
+                <input type="text" id="email" value="">
+                <span id="error-message-email"></span>
+                <input type="password" class="password" id="password" value="">
+                <span id="error-message-password"></span>
+                <input type="password" class="password" id="confrim-password" value=""> 
+                <span id="error-message-confrim-password"></span>
+                <span id="parent-eye-Psw"><i class="fas fa-eye" id="eye-Psw" onclick="showPsw()"></i></span>
+                <span id="parent-eye-ConfPsw"><i class="fas fa-eye" id="eye-ConfPsw" onclick="showConfPsw()"></i></span>
+            </div>
+            <button id="register-btn">Register</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./form.js"></script>
+
+    <!-- <div class="form">
+        <h1>Welcome Register</h1>
+        <div class="form-group">
+            <input type="text" id="fullName" placeholder="Full name">
+            <input type="text" id="email" placeholder="Email address">
+            <input type="password" id="password" placeholder="Password">
+            <button id="register-btn">Register</button>
+            <span id="error-message"></span>
+            <button class="clickBtn">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-eye-slash"></i>
+            </button>
+        </div>
+    </div> -->
+    <!-- <script src="./form.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+</body>
+</html>
